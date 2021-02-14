@@ -1,0 +1,42 @@
+
+<%- include partials/header.ejs %> 
+
+   <%- include partials/main_nav.ejs %> 
+
+      <!-- Main Contain -->
+   <main class="container">
+    <div class="jumbotron">
+    
+       <!--All infornation passed through here-->
+      <% switch (title) {
+        case 'Home' : %>
+        <%- include partials/home.ejs %>
+         <% break;
+
+        case 'About' : %>
+        <%- include partials/about.ejs %>
+         <% break;
+
+        case 'Projects' : %>
+        <%- include partials/projects.ejs %>
+         <% break;
+        
+        case 'Services' : %>
+        <%- include partials/services.ejs %> 
+         <% break;
+        
+        case 'Contact' : %>
+        <%- include partials/contact.ejs %> 
+        <% break;
+       } %>
+
+    </div>
+  </main>
+
+    <%- include partials/bottom_nav.ejs %> 
+    
+    <%- include partials/footer.ejs %> 
+
+
+
+
